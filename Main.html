@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Le Bon Lieu-Bonne site pour louer logement à Paris</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/common/icon/ome.icon.linklogo.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/ome.style.css" />
+		<link rel="stylesheet" href="css/ome.style.dif.css" />
+		<link rel="stylesheet" href="css/ome.index.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="ome-logo"></div>
+				<ul class="ome-menu">
+					<!--
+                    	
+                    	描述：未登录成功时的界面
+                    -->
+					<a href="login.html">
+						<li class="ome-head-img">
+							<img class="ome-nologin-img" src="img/common/icon/icon-nologin.png" /> Se Connecter
+						</li>
+					</a>
+					<a href="reg.html">
+						<li>Enregistrer</li>
+					</a>
+					<li>Aide</li>
+					<!--
+                    	
+                    	描述：登录成功后的代码
+                    -->
+					<li class="ome-head-img" onclick="OmeOpenUserPanel(this)" data-status="0">
+						<img src="img/common/modify/head.jpg" /> Ma Compte
+					</li>
+					<div class="ome-user-info" id="ome_user_info">
+						<a href="user/user.home.html">
+							<li>ESpace personnel</li>
+						</a>
+						<a href="user/user.money.html">
+							<li>Ma porte-monnaie</li>
+						</a>
+						<a href="user/user.order.html">
+							<li>Ma commande</li>
+						</a>
+						<li>Ma collection</li>
+						<li>Ma ressource de logement</li>
+						<li>Aide</li>
+						<li>Quitter</li>
+					</div>
+				</ul>
+				<div class="ome-head-search">
+					<input placeholder="Où voulez-vous trouver un logement？" onkeyup="javascript:OmeOpenSearchMind(this)" />
+					<button></button>
+					<div class="ome-search-mind" id="ome_head_search_mind">
+						<ul class="ome-ul-line ome-col-red ome-search-mind-head">
+							<li class="icon-noting">Désolé,aucun résultat</li>
+						</ul>
+						<ul class="ome-ul-line ome-col-red ome-search-mind-head">
+							<li class="icon-city">Arrondissement</li>
+						</ul>
+						<ul class="ome-ul-line ome-col-red ome-search-mind-content">
+							<li>Paris</li>
+							
+						</ul>
+						<ul class="ome-ul-line ome-col-red ome-search-mind-head">
+							<li class="icon-school">École</li>
+						</ul>
+						<ul class="ome-ul-line ome-col-red ome-search-mind-content">
+							<li>Les écoles de Paris</li>
+							
+						</ul>
+					</div>
+				</div>
+				<ul class="ome-showmenu">
+					<li onclick="javascript:OmeOpenMenu()">≡</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="ome-jumbotron">
+			
+			<p>Chercher votre logement préféré</p>
+			<div class="ome-jumbotron-input-bg">
+				<input class="ome-index-search-input" onfocus="javascript:OmeOpenSearch()" onkeyup="javascript:OmeOpenResult(this)" placeholder="Où voulez-vous trouver un logement？" />
+				<button class="ome-index-search-btn btn-primary">GO</button>
+				<!--
+            	
+            	描述：电脑面板采用方式
+            -->
+				<div class="ome-index-search-compu">
+					<ul class="ome-index-search-compu-head" data-index="0">
+						<li class="active" onclick="javascript:OmeChangeSearchshow(0,this)">Historique des recherches</li>
+						
+					</ul>
+					<div class="ome-index-search-compu-hos">
+						<ul class="ome-ul">
+							<li>13e</li>
+							<li>6e</li>
+							<li>5e</li>
+							<li>8e</li>
+							<li>92</li>
+							<li>94</li>
+						</ul>
+					</div>
+				
+				<!--
+                	
+                	描述：输入字体之后的联想面板
+                -->
+				<div class="ome-search-mind" id="ome_index_search_mind" style="box-shadow:none;">
+					<ul class="ome-ul-big-line ome-col-red ome-search-mind-head">
+						<li class="icon-noting">Désolé,aucun résultat</li>
+					</ul>
+
+					<ul class="ome-ul-big-line ome-col-red ome-search-mind-head">
+						<li class="icon-city">Arrondissement</li>
+					</ul>
+					<ul class="ome-ul-big-line ome-col-red ome-search-mind-content">
+						<li>Paris</li>
+						
+					</ul>
+					<ul class="ome-ul-big-line ome-col-red ome-search-mind-head">
+						<li class="icon-school">École</li>
+					</ul>
+					<ul class="ome-ul-big-line ome-col-red ome-search-mind-content">
+						<li>École de Paris</li>
+						<
+					</ul>
+				</div>
+
+			</div>
+
+		</section>
+		<div class="ome-index-tran-png" align="center">
+			<img src="img/common/icon/ome.icon.tran.png" />
+		</div>
+		<section class="ome-index-container">
+			<h1>hai mei xiang hao</h1>
+			<p>hai mei xiang hao</p>
+			<h4>recommander<a href="#" class="ome-left-common">plus information》》</a></h4>
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/伦敦.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/波士顿.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/纽约.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/悉尼.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/纽约.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/悉尼.jpg" width="100%" height="100%" />
+						<h2>paris</h2>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="ome-index-intro ome-top-common">
+			<ul>
+				<li>
+					<img src="img/common/icon/iconfont-chengshidingwei.png" />
+					<h1>mei xiang hao</h1>
+					<p>hai mei xiang hao</p>
+				</li>
+				<li>
+					<img src="img/common/icon/iconfont-xuexiaozixun.png" />
+					<h1>mei xiang hao</h1>
+					<p>hai mei xiang hao</p>
+				</li>
+				<li>
+					<img src="img/common/icon/icon-gy.png" />
+					<h1>mei xiang hao</h1>
+					<p>hai mei xiang hao</p>
+				</li>
+				<li>
+					<img src="img/common/icon/icon-bed.png" />
+					<h1>mei xiang hao</h1>
+					<p>hai mei xiang hao</p>
+				</li>
+
+			</ul>
+		</section>
+		<section class="ome-index-container">
+			<h4 class="ome-top-common">recommander<a href="#" class="ome-left-common">Plus information》》</a></h4>
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/伦敦.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/波士顿.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/纽约.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/悉尼.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/纽约.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/悉尼.jpg" width="100%" height="100%" />
+						<h2>EISTI</h2>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="ome-index-lanner ome-top-common">
+			<a href="javascript:OmeLannerLeftPage()" class="arrL"></a>
+			<a href="javascript:OmeLannerRightPage()" class="arrR"></a>
+			<ul id="ome_lanner" data-index="0">
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.3.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.2.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.3.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.2.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/modify/lanner.1.jpg" />
+					</a>
+				</li>
+			</ul>
+			<div class="lanner-sequence" align="center">
+				<a href="javascript:OmeLannerMoveTo(0)" class="active"></a>
+				<a href="javascript:OmeLannerMoveTo(1)"></a>
+				<a href="javascript:OmeLannerMoveTo(2)"></a>
+				<a href="javascript:OmeLannerMoveTo(3)"></a>
+				<a href="javascript:OmeLannerMoveTo(4)"></a>
+				<a href="javascript:OmeLannerMoveTo(5)"></a>
+			</div>
+		</section>
+		<section class="ome-index-intro">
+			<h2>Nous nous soucions de vos besoins</h2>
+			<p class="ome-text-p">Une maison confortable est votre refuge</p>
+
+			<ul>
+				
+				<li>
+					<img src="img/common/icon/icon-sfz.png" />
+					<h1>Sécuritaire</h1>
+				</li>
+				<li>
+					<img src="img/common/icon/icon-zf.png" />
+					<h1>Payer en line</h1>
+				</li>
+				<li>
+					<img src="img/common/icon/icon-bz.png" />
+					<h1>Garantie</h1>
+				</li>
+			</ul>
+
+		</section>
+
+		<footer>
+			<ul class="ome-footer-title">
+				<li><a href="javascript:void(0)">Nos service</a></li>
+			
+				<li><a href="javascript:void(0)">La coopération commercial</a></li>
+				<li><a href="javascript:void(0)">Nous contacter</a></li>
+				<li><a href="javascript:void(0)">Rejoignez-nous</a></li>
+				<li><a href="javascript:void(0)">Déclaration de service</a></li>
+			</ul>
+			<ul class="ome-footer-usonline">
+				<li>
+					<img class="usonline-icon usonline-wb" src="img/common/icon/ome.icon.wb.png" />
+				</li>
+				<li>
+					<img class="usonline-icon usonline-wx" src="img/common/icon/ome.icon.wx.png" />
+				</li>
+				<li>
+					<img class="usonline-icon  usonline-twitter" src="img/common/icon/ome.icon.twitter.png" />
+				</li>
+			</ul>
+			<p>©2020 Le Bon Lieu Tous les droits reserve | Paris</p>
+			<p>©2016 Le Bon Lieu All rights reserved</p>
+		</footer>
+
+		<!--
+        	
+        	描述：小屏中频搜索面板采用方式
+        -->
+		<div class="ome-index-search-phone">
+			<label class="ome-index-search-phone-colse" onclick="javascript:OmeCloseSearch()">×</label>
+			<div class="ome-searchphone-input-bg">
+				<input class="ome-index-search-input ome-input-border" placeholder="Où voulez-vous trouver une logement？" />
+				<button class="ome-index-search-btn">GO</button>
+			</div>
+			<div class="ome-index-search-phone-title">
+				<h4>historique<a href="#">plus information》》</a></h4>
+				<ul class="ome-ul">
+					<li>13e</li>
+					<li>6e</li>
+					<li>8e</li>
+					<li>16e</li>
+					<li>92</li>
+					<li>94</li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/ome.style.1.0.js"></script>
+	<script type="text/javascript" src="js/ome.index.1.0.js"></script>
+
+</html>
